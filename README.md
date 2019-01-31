@@ -1,7 +1,12 @@
 # Serilog.Sinks.AzureBlobStorage
 
-![Build status](https://dev.azure.com/cloudscope/Open%20Source/_apis/build/status/SeriLog-AzureBlobSink%20release "Build status")
-[![NuGet Badge](https://buildstats.info/nuget/Serilog.Sinks.AzureBlobStorage)](https://www.nuget.org/packages/Serilog.Sinks.AzureBlobStorage/)
+This is a fork of Chris Williams' https://github.com/chriswill/serilog-sinks-azureblobstorage
+
+This fork specifically focuses on file formatting/date pattern to allow granularity down to the millisecond.
+Ex. {yyyy}/{MM}/{dd}/MyApplication{HHmmssfff}.log
+This is done to support Azure Event Grid triggering.
+Under Azure Event Grid Triggeing, a whole log file can be routed to an logging aggregator service.
+
 
 Writes to a file in [Windows Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/).
 
