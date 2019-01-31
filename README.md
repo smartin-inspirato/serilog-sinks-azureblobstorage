@@ -7,6 +7,8 @@ Ex. {yyyy}/{MM}/{dd}/MyApplication{HHmmssfff}.log
 This is done to support Azure Event Grid triggering.
 Under Azure Event Grid Triggeing, a whole log file can be routed to an logging aggregator service.
 
+End Fork Comments
+---
 
 Writes to a file in [Windows Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/).
 
